@@ -1,0 +1,50 @@
+package stratery.btvn3;
+
+import java.util.Date;
+
+public class SinhVien {
+
+    private String hoTen;
+    private Date ngaySinh;
+    private float diemTB;
+
+    public void setHoTen(String hoTen) {
+        this.hoTen = hoTen;
+    }
+
+    public void setNgaySinh(Date ngaySinh) {
+        this.ngaySinh = ngaySinh;
+    }
+
+    public void setDiemTB(float diemTB) {
+        this.diemTB = diemTB;
+    }
+
+
+    public Date getNgaySinh() {
+        return ngaySinh;
+    }
+
+
+    public String getHoTen() {
+        return hoTen;
+    }
+
+    public float getDiemTB() {
+        return diemTB;
+    }
+
+    @Override
+    public String toString() {
+        return "\nThong tin sinh vien: "
+                +"\nHoTen: "+ hoTen +
+                "\nNgaySinh: " + ngaySinh +
+                "\nDiemTB: " + diemTB;
+    }
+
+    public SinhVien(String hoTen, Date ngaySinh, float diemTB) {
+        this.hoTen = hoTen;
+        this.ngaySinh = ngaySinh;
+        this.diemTB = diemTB;
+    }
+}
